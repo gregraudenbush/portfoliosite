@@ -70,10 +70,10 @@
             <div class="pull-right">
                 <nav id="nav">
                     <ul class="nav-default">
-                        <li><a href="#top" class="thin-300 active" data-nav="home">HOME</a></li>
-                        <li><a href="#about" class="thin-300 active" data-nav="about">ABOUT</a></li>
-                        <li><a href="#projects" class="thin-300" data-nav="projects">PROJECTS</a></li>
-                        <li><a href="#contact" class="thin-300" data-nav="contact">CONTACT</a></li>
+                        <li><a href="/" class="thin-300 active" data-nav="/">HOME</a></li>
+                        <li><a href="#about" class="thin-300 active" data-nav="#about">SKILLS</a></li>
+                        <li><a href="#projects" class="thin-300" data-nav="#projects">PROJECTS</a></li>
+                        <!-- <li><a href="#contact" class="thin-300" data-nav="contact">CONTACT</a></li> -->
                     </ul>
                     <a href="" id="hamburger" class="hamburger" data-open="false"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                     </a>
@@ -82,7 +82,7 @@
                 <nav id="dropdown" style="display: none;">
                     <ul class="nav-default">
                             <li><a href="#top" class="thin-300 active" data-nav="home">HOME</a></li>
-                            <li><a href="#about" class="thin-300 active" data-nav="about">ABOUT</a></li>
+                            <li><a href="#about" class="thin-300 active" data-nav="#about">ABOUT</a></li>
                             <li><a href="#projects" class="thin-300" data-nav="projects">PROJECTS</a></li>
                             <li><a href="#contact" class="thin-300" data-nav="contact">CONTACT</a></li>
                     </ul>
@@ -93,11 +93,14 @@
     </div>
     <div class="main" id="#top">  
         <div class="namebox">
-            <p class="name">Specializing in Full-Stack Applications</p>
+            <br>
+            <p class="name">Specializing in Full-Stack Applications</p><br>
+            <p class="name">gregraudenbush@gmail.com</p>
         </div> 
 
         <div class="namebox">
-            <a href="https://github.com/gregraudenbush"><button class="button">Github</button></a> <a href="https://www.linkedin.com/in/gregraudenbush/"><button class="button">Resume</button> </a><a href="https://www.linkedin.com/in/gregraudenbush/"><button class="button">LinkedIn</button> </a></p>
+            {% load static %}
+            <a target="_blank" rel="noopener noreferrer" href="{% static 'first_app/GRaudenbushResume.pdf' %}"><button class="button">Resume</button> </a><a target="_blank" rel="noopener noreferrer" href="https://github.com/gregraudenbush"><button class="button">Github</button></a> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gregraudenbush/"><button class="button">LINKEDIN</button> </a>
         </div>
     </div>
     
@@ -158,5 +161,62 @@
         </div>
 
     </div>
+    <div class="about" id="#projects">
+            <div class="aboutbox">
+                <p class="ptitle">Languages</p><br>
+                <ul class="ulstyle">
+                    <li>JavaScript (ES5, ES6, TypeScript)</li>
+                    <li>Java</li>
+                    <li>Python (2 & 3)</li>
+                </ul>
+            </div>
+            <div class="aboutbox">
+                <p class="ptitle">Front End</p><br>
+                <ul class="ulstyle">
+                    <li>Angular</li>
+                    <li>JQuery</li>
+                    <li>Ajax</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Web Audio API</li>
+                    
+                </ul>
+            </div>
+            <div class="aboutbox">
+                    <p class="ptitle">Server</p><br>
+                    <ul class="ulstyle">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Spring Framework (Spring Boot, Spring Data)</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>AWS</li>
+                    </ul>
+            </div>
+            <div class="aboutbox">
+                    <p class="ptitle">Database</p><br>
+                    <ul class="ulstyle">
+                        <li>MySQL</li>
+                        <li>NoSQL</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                        <li>Django ORM</li>
+                        <li>Java Persistance API</li>
+                    </ul>
+            </div>
+            <div class="aboutbox">
+                    <p class="ptitle">Methodologies</p><br>
+                    <ul class="ulstyle">
+                        <li>Responsive Web Design</li>
+                        <li>OOP</li>
+                        <li>TDD</li>
+                        <li>Git</li>
+                        <li>MVC</li>
+                        <li>RESt APIs</li>
+                    </ul>
+            </div>
+    
+        </div>
 </body>
 </html>
