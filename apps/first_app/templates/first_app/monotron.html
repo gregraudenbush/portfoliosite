@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/monotron/monotron.css' %}" media="screen" title="no title" charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/monotron/monotron.less' %}" media="screen" title="no title" charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/monotron/flexbox.less' %}" media="screen" title="no title" charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/monotron/normalize.less' %}" media="screen" title="no title" charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first_app/css/monotron/preboot.less' %}" media="screen" title="no title" charset="utf-8">
+    
+    
+    <title>Document</title>
+</head>
+<body>
+        <div id="monotron">
+                <div id="brand">
+                  <h1 id="title">Monotron</h1>
+                  <div id="description">Web Remix of an Analog Classic</div>
+                </div>
+                <div id="controls">
+                  <div class="panel">
+                    <label>
+                    <select id="mod">
+                      <option>Standby</option>
+                      <option>Pitch</option>
+                      <option>Cutoff</option>
+                    </select>
+                    <br />Mod
+                    </label>
+                  </div>
+                  <div class="panel">
+                    <h2>VCO</h2>
+                    <div class="knobs">
+                      <div class="knob">
+                        <input id="pitch" type="range" min="0" max="100" data-width="40" data-height="40" data-angleOffset="220" data-angleRange="280">
+                        <label>Pitch</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <h2>LFO</h2>
+                    <div class="knobs">
+                      <div class="knob">
+                        <input id="rate" type="range" min="0" max="100" data-width="40" data-height="40" data-angleOffset="220" data-angleRange="280">
+                        <label>Rate</label>
+                      </div>
+                      <div class="knob">
+                        <input id="int" type="range" min="0" max="100" data-width="40" data-height="40" data-angleOffset="220" data-angleRange="280">
+                        <label>Int.</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <h2>VCF</h2>
+                    <div class="knobs">
+                      <div class="knob">
+                        <input id="cutoff" type="range" min="0" max="100" data-width="40" data-height="40" data-angleOffset="220" data-angleRange="280">
+                        <label>Cutoff</label>
+                      </div>
+                      <div class="knob">
+                        <input id="peak" type="range" min="0" max="100" data-width="40" data-height="40" data-angleOffset="220" data-angleRange="280">
+                        <label>Peak</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="keyboard"></div>
+              </div>
+    
+</body>
+</html>
