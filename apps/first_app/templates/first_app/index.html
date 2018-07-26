@@ -71,8 +71,8 @@
                 <nav id="nav">
                     <ul class="nav-default">
                         <li><a href="/" class="thin-300 active" data-nav="/">HOME</a></li>
-                        <li><a href="#about" class="thin-300 active" data-nav="#about">SKILLS</a></li>
-                        <li><a href="#projects" class="thin-300" data-nav="#projects">PROJECTS</a></li>
+                        <li><a href="#about" class="thin-300 active" >SKILLS</a></li>
+                        <li><a href="#projects" class="thin-300" >PROJECTS</a></li>
                         <!-- <li><a href="#contact" class="thin-300" data-nav="contact">CONTACT</a></li> -->
                     </ul>
                     <a href="" id="hamburger" class="hamburger" data-open="false"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
@@ -82,9 +82,9 @@
                 <nav id="dropdown" style="display: none;">
                     <ul class="nav-default">
                             <li><a href="#top" class="thin-300 active" data-nav="home">HOME</a></li>
-                            <li><a href="#about" class="thin-300 active" data-nav="#about">ABOUT</a></li>
-                            <li><a href="#projects" class="thin-300" data-nav="projects">PROJECTS</a></li>
-                            <li><a href="#contact" class="thin-300" data-nav="contact">CONTACT</a></li>
+                            <li><a href="#about" class="thin-300 active" data-nav="#about">SKILLS</a></li>
+                            <li><a href="#projects" class="thin-300" data-nav="#projects">PROJECTS</a></li>
+                            <
                     </ul>
                 </nav>
             </div>
@@ -97,6 +97,7 @@
             <p class="name">Specializing in Full-Stack Applications</p><br>
             <p class="name">gregraudenbush@gmail.com</p>
         </div> 
+        <br>
 
         <div class="namebox">
             {% load static %}
@@ -104,7 +105,7 @@
         </div>
     </div>
     
-    <div class="about" id="#about">
+    <div class="about" id="about">
         <div class="aboutbox">
             <p class="ptitle">Languages</p><br>
             <ul class="ulstyle">
@@ -145,6 +146,7 @@
                     <li>MongoDB</li>
                     <li>Mongoose</li>
                     <li>Django ORM</li>
+                    <li>Hibernate ORM</li>
                     <li>Java Persistance API</li>
                 </ul>
         </div>
@@ -161,62 +163,42 @@
         </div>
 
     </div>
-    <div class="about" id="#projects">
-            <div class="aboutbox">
-                <p class="ptitle">Languages</p><br>
-                <ul class="ulstyle">
-                    <li>JavaScript (ES5, ES6, TypeScript)</li>
-                    <li>Java</li>
-                    <li>Python (2 & 3)</li>
-                </ul>
-            </div>
-            <div class="aboutbox">
-                <p class="ptitle">Front End</p><br>
-                <ul class="ulstyle">
-                    <li>Angular</li>
-                    <li>JQuery</li>
-                    <li>Ajax</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>Web Audio API</li>
-                    
-                </ul>
-            </div>
-            <div class="aboutbox">
-                    <p class="ptitle">Server</p><br>
-                    <ul class="ulstyle">
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Spring Framework (Spring Boot, Spring Data)</li>
-                        <li>Django</li>
-                        <li>Flask</li>
-                        <li>AWS</li>
-                    </ul>
-            </div>
-            <div class="aboutbox">
-                    <p class="ptitle">Database</p><br>
-                    <ul class="ulstyle">
-                        <li>MySQL</li>
-                        <li>NoSQL</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Django ORM</li>
-                        <li>Java Persistance API</li>
-                    </ul>
-            </div>
-            <div class="aboutbox">
-                    <p class="ptitle">Methodologies</p><br>
-                    <ul class="ulstyle">
-                        <li>Responsive Web Design</li>
-                        <li>OOP</li>
-                        <li>TDD</li>
-                        <li>Git</li>
-                        <li>MVC</li>
-                        <li>RESt APIs</li>
-                    </ul>
-            </div>
-    
+    <div class="projects" id="projects">
+        <div class="projectbox">
+            <p class="title">Webtuner</p><br>
+            {% load static %}
+            <img src="{% static "first_app/pics/webtuner.png" %}" alt="My image" width="300px"/>
+            <br><br>
+            <p style="color: turquoise;">JavaScript, Python, Django, HTML, CSS, Web Audio API</p>
+            <br>
+            <p>Web based instrument tuner. Incorporates the computer or mobile device’s microphone
+                    and receives sound via instrument or voice. App returns the musical key of the input and
+                    how far from perfect pitch it is.</p>
         </div>
+
+        <div class="projectbox">
+                <p class="title">Honora Studios</p><br>
+                {% load static %}
+                
+                <img src="{% static "first_app/pics/honora.png" %}" alt="My image" width="300px"/>
+                <br><br>
+                <p style="color: turquoise;">Java, JavaScript, HTML, CSS</p>
+                <br>
+                <p>Full feature E-Commerce site for local artist. Admin panel software designed for the
+                        artist to update the shop, apply discount codes, and be notified of purchases and shipping.</p>
+            </div>
+        <div class="projectbox">
+                <p class="title">Monotron</p><br>
+                {% load static %}
+                <img src="{% static "first_app/pics/monotron.png" %}" alt="My image" width="300px"/>
+                <br><br>
+                <p style="color: turquoise;">JavaScript, Python, Django, HTML, CSS, Web Audio API</p>
+                <br>
+                <p>A web based re-creation of an analog synthesizer. Sound generation and modulation that
+                        is mapped to the keyboard and lets a user create their own custom sounds effects and
+                        music.</p>
+            </div>
+            
+     </div>
 </body>
 </html>
